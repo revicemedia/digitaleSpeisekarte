@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export function useContentful(query: string) {
   const [data, setData] = useState({});
-  const [error, setError] = useState("");
+  // const [error, setError] = useState("");
 
   useEffect(() => {
     fetch(
@@ -23,8 +23,8 @@ export function useContentful(query: string) {
         setData(json.data);
       })
       .catch((error) => {
-        setError(error.message);
-        console.log(error);
+        // setError(error.message);
+        console.log(error.message);
       });
   }, [query]);
 

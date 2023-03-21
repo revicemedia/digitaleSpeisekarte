@@ -5,6 +5,8 @@ import { DATA2 } from "../../interfaces/interfaces";
 const Categories: React.FC = () => {
   const softdrinks: DATA2 = useMainContext();
 
+  console.log(softdrinks);
+
   // const test = softdrinks.data?.softdrinks?.items;
 
   return (
