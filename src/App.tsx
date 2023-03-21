@@ -1,17 +1,20 @@
 import React from "react";
-import { useContext } from "react";
-import { TasksContext } from "./Context/TaskContext";
-
-export interface test {
-  name: string;
-  description: string;
-}
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Elements from "./Components/Elements/Elements";
+import { MainProvider } from "./Context/AllContext";
+import RootPage from "./Pages/rootpage";
 
 const App: React.FC = () => {
-  const Test = useContext(TasksContext);
   return (
     <div className="App">
-      <h2>{Test}</h2>
+      <MainProvider>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/*" element={<RootPage />} />
+            <Route path="/allergene" element={<Elements />} />
+          </Routes>
+        </BrowserRouter>
+      </MainProvider>
     </div>
   );
 };

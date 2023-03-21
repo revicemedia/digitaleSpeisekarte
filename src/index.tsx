@@ -1,15 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+import "./index.scss";
 import App from "./App";
-import { TasksContext } from "./Context/TaskContext";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-
 root.render(
-  <TasksContext.Provider value="Hallo TypeScript Welt!">
+  <React.StrictMode>
     <App />
-  </TasksContext.Provider>
+  </React.StrictMode>
 );
