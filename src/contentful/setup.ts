@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export function useContentful(query: string) {
   const [data, setData] = useState({});
-  // const [error, setError] = useState("");
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch(
@@ -21,12 +21,12 @@ export function useContentful(query: string) {
       .then((res) => res.json())
       .then((json) => {
         setData(json.data);
+        setError(null);
       })
       .catch((error) => {
-        // setError(error.message);
-        console.log(error.message);
+        setError(error.message);
       });
   }, [query]);
 
-  return { data };
+  return { data, error };
 }

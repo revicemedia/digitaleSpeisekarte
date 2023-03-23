@@ -1,7 +1,9 @@
 export interface DATA {
-  snacks?: productDATA;
-  softdrinks?: productDATA;
-  alcohol?: productDATA;
+  data?: {
+    snacks?: productDATA;
+    softdrinks?: productDATA;
+    alcohol?: productDATA;
+  }
 }
 
 export interface DATA2 {
@@ -10,6 +12,7 @@ export interface DATA2 {
     softdrinks?: productDATA;
     alcohol?: productDATA;
   };
+  error?: string | null;
 }
 
 export interface productDATA {
