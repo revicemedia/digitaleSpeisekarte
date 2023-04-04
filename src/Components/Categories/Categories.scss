@@ -1,0 +1,15 @@
+.Hidden-Wrapper {
+  padding: 0px 0px 20px 20px;
+  overflow: hidden;
+}
+.Categories {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.Categories::-webkit-scrollbar {
+  display: none;
+}

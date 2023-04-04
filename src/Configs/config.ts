@@ -1,13 +1,18 @@
 export interface IConfig {
-    locationName: string;
-    locationCategories: string[];
-    locationSeatTotal: number;
+  locationName: string;
+  locationCategories: any;
+  locationSeatTotal: number;
 }
 
 export const config: IConfig = {
-    locationName: "Testlocation",
-    locationCategories: [
-        "Softdrinks", "Snacks"
-    ],
-    locationSeatTotal: 150
-}
+  locationName: "Testlocation",
+  locationCategories: [
+    { name: "Softdrinks", icon: "drink" },
+    { name: "Snacks", icon: "burger" },
+    { name: "Bier", icon: "beer" },
+    { name: "Bier", icon: "beer" },
+    { name: "Bier", icon: "beer" },
+    { name: "Bier", icon: "beer" },
+  ],
+  locationSeatTotal: 150,
+};

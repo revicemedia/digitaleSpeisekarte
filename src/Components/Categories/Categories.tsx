@@ -1,20 +1,26 @@
 import React from "react";
+import { config } from "../../Configs/config";
+import "./Categories.scss";
+import Category from "./Category/Category";
 
-const Categories: React.FC = () => {
+function Categories(): JSX.Element {
+  const baseClass = "Categories";
 
   return (
     <>
-      <div>
-        {/* {test?.map(({ name, description, price, id }: any) => (
-          <div key={id.id}>
-            <h3>{name}</h3>
-            <p>{description}</p>
-            <p>{price + "€"}</p>
-          </div>
-        ))} */}
+      <div className="Hidden-Wrapper">
+        <div className={baseClass}>
+          {config.locationCategories.map((item: any, index: any) => (
+            <Category
+              key={index}
+              CategoryIcon={item.icon}
+              CategoryText={item.name}
+            />
+          ))}
+        </div>
       </div>
     </>
   );
-};
+}
 
 export default Categories;

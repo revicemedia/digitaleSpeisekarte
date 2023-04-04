@@ -1,0 +1,21 @@
+.Category {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #dedede;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+  align-items: center;
+  width: auto;
+  margin-right: 10px;
+  user-select: none;
+
+  &__Image {
+    width: 25px;
+    user-select: none;
+  }
+
+  &__Text {
+    width: 100%;
+  }
+}
