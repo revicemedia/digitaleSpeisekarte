@@ -36,7 +36,12 @@ function Categories(): JSX.Element {
         <div className={baseClass}>
           {/* {searchBar && <Category key="SUCHERGEBNISSE" content={}/>} */}
           {kategorien.map((item: any, index: any) => (
-            <Category key={index} content={item} onTabClick={onTabClick} />
+            <Category
+              key={index}
+              content={item}
+              onTabClick={onTabClick}
+              activeTab={activeTab}
+            />
           ))}
         </div>
         {/* Produkte */}

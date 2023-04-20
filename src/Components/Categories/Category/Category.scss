@@ -21,3 +21,31 @@
     font-size: 0.8rem;
   }
 }
+
+.Category-Active {
+  all: unset;
+  padding: 10px 25px;
+  border-radius: 20px;
+  background-color: #2b3446;
+  display: grid;
+  color: #fff;
+  grid-template-columns: auto 1fr;
+  gap: 5px;
+  align-items: center;
+  width: auto;
+  margin-right: 10px;
+  user-select: none;
+
+  &__Image {
+    width: 25px;
+    user-select: none;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+  }
+
+  &__Text {
+    color: #fff;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+}

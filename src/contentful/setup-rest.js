@@ -20,18 +20,14 @@ export function useContentful() {
         setKategorien(res.items);
       })
       .catch((e) => setError(...error, e.message));
-  }, []);
 
-  useEffect(() => {
     client
       .getEntries({ content_type: "produkte" })
       .then((res) => {
         setProdukte(res.items);
       })
       .catch((e) => setError(...error, e.message));
-  }, []);
 
-  useEffect(() => {
     client
       .getEntries({ content_type: "allergene" })
       .then((res) => {
