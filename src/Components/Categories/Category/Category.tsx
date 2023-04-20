@@ -1,35 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./Category.scss";
-import BeerIcon from "../../../Configs/icons/beer.svg";
-import BurgerIcon from "../../../Configs/icons/burger.svg";
-import DrinkIcon from "../../../Configs/icons/drink.svg";
 
-function Category({ CategoryText, CategoryIcon }: any): JSX.Element {
+function Category({ content, onTabClick }: any): JSX.Element {
   const baseClass = "Category";
-  const [iconLink, setIconLink] = useState("default");
-
-  useEffect(() => {
-    if (CategoryIcon === "beer") {
-      setIconLink(BeerIcon);
-    }
-    if (CategoryIcon === "burger") {
-      setIconLink(BurgerIcon);
-    }
-    if (CategoryIcon === "drink") {
-      setIconLink(DrinkIcon);
-    }
-  }, [CategoryIcon]);
 
   return (
     <>
-      <div className={baseClass}>
+      <button
+        className={baseClass}
+        onClick={() => onTabClick(content.fields.sortierung)}
+      >
         <img
           className={baseClass + "__Image"}
-          src={iconLink}
-          alt="Icon for Category"
+          src={content.fields.icon.fields.file.url}
+          alt={content.fields.icon.fields.description}
         />
-        <p className={baseClass + "__Text"}>{CategoryText}</p>
-      </div>
+        <p className={baseClass + "__Text"}>{content.fields.name}</p>
+      </button>
     </>
   );
 }
