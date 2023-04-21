@@ -1,3 +1,16 @@
 .HeroSection {
   display: block;
+  margin: 10px 20px 30px 20px;
+  background-color: #dedede;
+  height: auto;
+  max-height: 180px;
+  border-radius: 20px;
+  overflow: hidden;
+  user-select: none;
+
+  &__Image {
+    object-fit: contain;
+    width: 100%;
+    user-select: none;
+  }
 }

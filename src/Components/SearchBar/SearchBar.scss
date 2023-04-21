@@ -1,0 +1,28 @@
+.SearchBar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  &__searchIcon {
+    width: 20px;
+  }
+}
+
+input {
+  all: unset;
+  background-color: #dedede;
+  padding: 10px 20px;
+  color: #3d3d3d;
+  border-radius: 5px;
+}
+
+button {
+  all: unset;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #2b3446;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

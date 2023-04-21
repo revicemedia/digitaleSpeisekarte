@@ -7,6 +7,7 @@ export function useContentful() {
   const [produkte, setProdukte] = useState([]);
   const [allergene, setAllergene] = useState([]);
   const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   const client = contentful.createClient({
     space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
@@ -34,7 +35,9 @@ export function useContentful() {
         setAllergene(res.items);
       })
       .catch((e) => setError(...error, e.message));
+
+    setLoading(false);
   }, []);
 
-  return { produkte, kategorien, allergene, error };
+  return { produkte, kategorien, allergene, loading, error };
 }

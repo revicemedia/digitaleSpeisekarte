@@ -4,8 +4,6 @@ import "./Product.scss";
 function Product({ content }: any): JSX.Element {
   const baseClass = "Product";
 
-  console.log(content);
-
   return (
     <>
       <div className={baseClass}>
@@ -24,7 +22,7 @@ function Product({ content }: any): JSX.Element {
           {content.fields.beschreibung}
           {content.fields.allergene &&
             content.fields.allergene.map((item: any, index: number) => (
-              <span className={baseClass + "__Text__Allergene"}>
+              <span key={index} className={baseClass + "__Text__Allergene"}>
                 {item.fields.nummerierung}
               </span>
             ))}

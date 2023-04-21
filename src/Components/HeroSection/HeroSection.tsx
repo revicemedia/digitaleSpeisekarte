@@ -1,10 +1,16 @@
-import React from "react";
 import "./HeroSection.scss";
+import LocationImage from "../../Configs/LocationImage.jpg";
 
-const HeroSection: React.FC = () => {
+function HeroSection(): JSX.Element {
   const baseClass = "HeroSection";
 
-  return <div className={baseClass}>HeroSection</div>;
-};
+  return (
+    <div className={baseClass}>
+      <div>
+        <img className={baseClass + "__Image"} src={LocationImage} alt="" />
+      </div>
+    </div>
+  );
+}
 
 export default HeroSection;

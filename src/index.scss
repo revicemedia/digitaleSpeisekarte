@@ -10,5 +10,9 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: #fff !important;
+}
+
+:root {
+  color-scheme: only light;
 }
