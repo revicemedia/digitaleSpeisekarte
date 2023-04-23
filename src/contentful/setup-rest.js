@@ -1,11 +1,13 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react";
 import * as contentful from "contentful";
+import { config } from "../Configs/config";
 
 export function useContentful() {
   const [kategorien, setKategorien] = useState([]);
   const [produkte, setProdukte] = useState([]);
   const [allergene, setAllergene] = useState([]);
+  const [events, setEvents] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
@@ -36,8 +38,16 @@ export function useContentful() {
       })
       .catch((e) => setError(...error, e.message));
 
+    config.options.locationHasEventSlider &&
+      client
+        .getEntries({ content_type: "events" })
+        .then((res) => {
+          setEvents(res.items);
+        })
+        .catch((e) => setError(...error, e.message));
+
     setLoading(false);
   }, []);
 
-  return { produkte, kategorien, allergene, loading, error };
+  return { produkte, kategorien, allergene, events, loading, error };
 }

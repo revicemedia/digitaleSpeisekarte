@@ -1,0 +1,39 @@
+.Event {
+  all: unset;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  background-color: #dedede;
+  height: 100px;
+  width: 90%;
+  min-width: 100%;
+  margin-right: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  user-select: none;
+  position: relative;
+
+  &__Image {
+    width: 100px;
+    object-fit: cover;
+    height: 100%;
+    user-select: none;
+  }
+
+  &__Data-Wrapper {
+    padding: 20px;
+    &__Headline {
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+
+    &__Text {
+      font-size: 0.7rem;
+    }
+  }
+}
+
+.Event:last-of-type {
+  margin-right: 0px;
+}

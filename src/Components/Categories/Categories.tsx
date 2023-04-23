@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { config } from "../../Configs/config";
 import { useContentful } from "../../contentful/setup-rest";
-import SearchBar from "../SearchBar/SearchBar";
 import "./Categories.scss";
 import Category from "./Category/Category";
 import Product from "./Product/Product";
@@ -11,6 +10,7 @@ function Categories(): JSX.Element {
 
   const [activeTab, setActiveTab] = useState(1);
   const [filterList, setFilterList] = useState<any>([]);
+
   // const searchBar = true;
 
   const { kategorien, produkte }: any = useContentful();
@@ -32,16 +32,11 @@ function Categories(): JSX.Element {
     <>
       <div className="Hidden-Wrapper">
         <>
-          <h3 className={baseClass + "__Headline"}>{config.searchHeadline}</h3>
-          <SearchBar />
-        </>
-        <>
           <h3 className={baseClass + "__Headline"}>
             {config.categoriesHeadline}
           </h3>
           {/* Kategorien */}
           <div className={baseClass}>
-            {/* {searchBar && <Category key="SUCHERGEBNISSE" content={}/>} */}
             {kategorien.map((item: any, index: any) => (
               <Category
                 key={index}
@@ -51,7 +46,6 @@ function Categories(): JSX.Element {
               />
             ))}
           </div>
-          {/* Produkte */}
           <div className="Products">
             {filterList.map((item: any, index: any) => (
               <Product key={index} content={item} />
