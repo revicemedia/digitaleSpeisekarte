@@ -1,8 +1,10 @@
+@import "../../../Configs/config.scss";
+
 .Event {
   all: unset;
   display: grid;
   grid-template-columns: auto 1fr;
-  background-color: #dedede;
+  background-color: $field-color;
   height: 100px;
   width: 90%;
   min-width: 100%;

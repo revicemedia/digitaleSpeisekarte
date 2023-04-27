@@ -11,8 +11,6 @@ function Categories(): JSX.Element {
   const [activeTab, setActiveTab] = useState(1);
   const [filterList, setFilterList] = useState<any>([]);
 
-  // const searchBar = true;
-
   const { kategorien, produkte }: any = useContentful();
 
   const onTabClick = (tab: number) => {

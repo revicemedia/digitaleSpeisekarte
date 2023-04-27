@@ -4,8 +4,6 @@ import "./Event.scss";
 function Event({ content }: any): JSX.Element {
   const baseClass = "Event";
 
-  console.log(content);
-
   return (
     <div className={baseClass}>
       <img

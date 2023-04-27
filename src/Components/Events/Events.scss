@@ -1,15 +1,17 @@
 .Hidden-Wrapper {
   padding: 0px 20px 20px 20px;
   overflow: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .Events {
   display: flex;
   flex-direction: row;
   overflow: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
   margin-bottom: 20px;
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
 
   &__Headline {
     margin-bottom: 20px;

@@ -1,7 +1,9 @@
+@import "../../../Configs/config.scss";
+
 .Product {
   padding: 30px 30px;
   border-radius: 20px;
-  background-color: #dedede;
+  background-color: $field-color;
   display: grid;
   grid-template-columns: 1fr;
   gap: 5px;
@@ -33,7 +35,7 @@
     &__Allergene {
       font-size: 0.5rem;
       padding: 0px 0.1rem;
-      color: #f1725e;
+      color: $highlight-color;
     }
 
     &__Description {
