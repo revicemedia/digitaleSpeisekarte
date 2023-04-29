@@ -5,6 +5,7 @@ import HeroSection from "../Components/HeroSection/HeroSection";
 import "./rootpage.scss";
 import Events from "../Components/Events/Events";
 import { config } from "../Configs/config";
+import Footer from "../Components/Footer/Footer";
 
 const RootPage: React.FC = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -32,6 +33,7 @@ const RootPage: React.FC = () => {
           <HeroSection />
           {config.options.locationHasEventSlider && <Events />}
           <Categories />
+          <Footer />
         </section>
       )}
     </>

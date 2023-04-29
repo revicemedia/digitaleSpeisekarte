@@ -2,6 +2,7 @@ import React from "react";
 import BackHeader from "../Components/Header-Back/Header";
 import "./impressum.scss";
 import { config } from "../Configs/config";
+import Footer from "../Components/Footer/Footer";
 
 const ImpressumPage: React.FC = () => {
   const baseClass = "ImpressumPage";
@@ -56,6 +57,7 @@ const ImpressumPage: React.FC = () => {
           keine Anbindung zu einer Datenbank, welche Daten erhebt.
         </p>
       </div>
+      <Footer />
     </div>
   );
 };
