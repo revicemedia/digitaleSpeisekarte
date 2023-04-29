@@ -1,5 +1,6 @@
 import React from "react";
 import "./Product.scss";
+import { Link } from "react-router-dom";
 
 function Product({ content }: any): JSX.Element {
   const baseClass = "Product";
@@ -22,9 +23,13 @@ function Product({ content }: any): JSX.Element {
           {content.fields.beschreibung}
           {content.fields.allergene &&
             content.fields.allergene.map((item: any, index: number) => (
-              <span key={index} className={baseClass + "__Text__Allergene"}>
+              <Link
+                to="/allergene"
+                key={index}
+                className={baseClass + "__Text__Allergene"}
+              >
                 {item.fields.nummerierung}
-              </span>
+              </Link>
             ))}
         </p>
       </div>
