@@ -25,7 +25,7 @@ export function useContentful() {
       .catch((e) => setError(...error, e.message));
 
     client
-      .getEntries({ content_type: "produkte" })
+      .getEntries({ content_type: "produkte", order: "fields.name" })
       .then((res) => {
         setProdukte(res.items);
       })

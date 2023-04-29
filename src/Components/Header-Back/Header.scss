@@ -1,0 +1,24 @@
+.BackHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px 20px 20px;
+
+  &__logo {
+    height: 40px;
+  }
+
+  &__InfoSection {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    &__InfoBadge {
+      padding: 5px;
+      background-color: #dedede;
+    }
+  }
+}

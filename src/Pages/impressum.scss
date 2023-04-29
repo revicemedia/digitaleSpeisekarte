@@ -1,0 +1,19 @@
+.ImpressumPage {
+  padding: 20px 0 0 0;
+
+  &__Wrapper {
+    padding: 0px 20px 20px 20px;
+
+    &__Headline {
+      margin-bottom: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    &__Paragraph {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}

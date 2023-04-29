@@ -23,6 +23,9 @@
 
   &__Data-Wrapper {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     &__Headline {
       font-size: 0.9rem;
       text-transform: uppercase;

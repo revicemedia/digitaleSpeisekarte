@@ -12,12 +12,14 @@ function Event({ content }: any): JSX.Element {
         alt={content.fields.bild.fields.description}
       />
       <div className={baseClass + "__Data-Wrapper"}>
-        <h4 className={baseClass + "__Data-Wrapper__Headline"}>
-          {content.fields.name}
-        </h4>
-        <p className={baseClass + "__Data-Wrapper__Text"}>
-          {content.fields.details}
-        </p>
+        <>
+          <h4 className={baseClass + "__Data-Wrapper__Headline"}>
+            {content.fields.name}
+          </h4>
+          <p className={baseClass + "__Data-Wrapper__Text"}>
+            {content.fields.details}
+          </p>
+        </>
       </div>
     </div>
   );
