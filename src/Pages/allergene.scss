@@ -1,3 +1,64 @@
+@import "../Configs/config.scss";
+
 .AllergenePage {
   padding: 20px 0 0 0;
+
+  &__Wrapper {
+    padding: 0px 20px 20px 20px;
+
+    &__Headline {
+      margin-bottom: 20px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    &__Paragraph {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__Item-Wrapper {
+    margin-bottom: 1rem;
+
+    &__Item {
+      background-color: #dedede;
+      margin-bottom: 1rem;
+      padding: 1.8rem;
+      border-radius: 20px;
+      background-color: $field-color;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 5px;
+      align-items: center;
+      width: auto;
+      user-select: none;
+
+      &__grid {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 1.8rem;
+      }
+
+      &__Text {
+        font-size: 0.9rem;
+
+        &__Headline {
+          font-size: 0.9rem;
+          font-weight: 600;
+        }
+
+        &__Allergene {
+          font-size: 0.5rem;
+          padding: 0px 0.1rem;
+          color: $highlight-color;
+        }
+
+        &__Description {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
 }

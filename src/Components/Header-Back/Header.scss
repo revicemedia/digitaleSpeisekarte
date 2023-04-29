@@ -1,3 +1,5 @@
+@import "../../Configs/config.scss";
+
 .BackHeader {
   display: flex;
   flex-direction: row;
@@ -17,8 +19,16 @@
     justify-content: center;
 
     &__InfoBadge {
-      padding: 5px;
-      background-color: #dedede;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      height: 30px;
+      background-color: $main-color;
+      border-radius: 1rem;
+      text-decoration: none;
+      color: #fff;
+      font-size: 0.8rem;
     }
   }
 }

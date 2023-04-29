@@ -32,7 +32,7 @@ export function useContentful() {
       .catch((e) => setError(...error, e.message));
 
     client
-      .getEntries({ content_type: "allergene" })
+      .getEntries({ content_type: "allergene", order: "fields.nummerierung" })
       .then((res) => {
         setAllergene(res.items);
       })
