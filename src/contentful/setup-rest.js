@@ -38,9 +38,9 @@ export function useContentful() {
       })
       .catch((e) => setError(...error, e.message));
 
-    config.options.locationHasEventSlider &&
+    config.options.locationHasNewsSlider &&
       client
-        .getEntries({ content_type: "events" })
+        .getEntries({ content_type: "news" })
         .then((res) => {
           setEvents(res.items);
         })

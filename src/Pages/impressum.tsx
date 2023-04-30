@@ -57,6 +57,16 @@ const ImpressumPage: React.FC = () => {
           keine Anbindung zu einer Datenbank, welche Daten erhebt.
         </p>
       </div>
+      <div className={baseClass + "__Wrapper"}>
+        <a
+          href={config.adminLink}
+          className={baseClass + "__Wrapper__AdminLink"}
+          target="_blank"
+          rel="noreferrer"
+        >
+          Dashboard
+        </a>
+      </div>
       <Footer />
     </div>
   );

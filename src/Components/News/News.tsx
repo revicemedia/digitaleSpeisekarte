@@ -1,10 +1,10 @@
 import { config } from "../../Configs/config";
 import { useContentful } from "../../contentful/setup-rest";
-import "./Events.scss";
-import Event from "./Event/Event";
+import "./News.scss";
+import Event from "./NewsEntry/NewsEntry";
 
-function Events(): JSX.Element {
-  const baseClass = "Events";
+function News(): JSX.Element {
+  const baseClass = "News";
 
   const { events }: any = useContentful();
 
@@ -12,7 +12,7 @@ function Events(): JSX.Element {
     <>
       <div className="Hidden-Wrapper">
         <>
-          <h3 className={baseClass + "__Headline"}>{config.eventsHeadline}</h3>
+          <h3 className={baseClass + "__Headline"}>{config.newsHeadline}</h3>
           <div className={baseClass}>
             {events.map((item: any, index: any) => (
               <Event content={item} key={index} />
@@ -24,4 +24,4 @@ function Events(): JSX.Element {
   );
 }
 
-export default Events;
+export default News;

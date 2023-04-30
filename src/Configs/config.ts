@@ -8,10 +8,11 @@ export const config: IConfig = {
   categoriesHeadline: "Kategorien",
   searchHeadline: "Suchen",
   searchPlaceholder: "Ich suche nach ...",
-  eventsHeadline: "Events",
+  newsHeadline: "News",
+  adminLink: "https://app.contentful.com",
   options: {
-    locationHasNewsSlider: false,
-    locationHasEventSlider: true,
+    locationHasNewsSlider: true,
+    locationHasEventSlider: false,
     locationHasJobSection: false,
   },
 };

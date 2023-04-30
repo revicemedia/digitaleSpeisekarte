@@ -1,11 +1,13 @@
+@import "../../Configs/config.scss";
+
 .Hidden-Wrapper {
-  padding: 0px 20px 20px 20px;
+  padding: 0 20px 10px 20px;
   overflow: hidden;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
 
-.Events {
+.News {
   display: flex;
   flex-direction: row;
   overflow: scroll;

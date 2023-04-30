@@ -1,8 +1,8 @@
 import React from "react";
-import "./Event.scss";
+import "./NewsEntry.scss";
 
-function Event({ content }: any): JSX.Element {
-  const baseClass = "Event";
+function NewsEntry({ content }: any): JSX.Element {
+  const baseClass = "NewsEntry";
 
   return (
     <div className={baseClass}>
@@ -25,4 +25,4 @@ function Event({ content }: any): JSX.Element {
   );
 }
 
-export default Event;
+export default NewsEntry;

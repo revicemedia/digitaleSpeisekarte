@@ -3,9 +3,9 @@ import Categories from "../Components/Categories/Categories";
 import Header from "../Components/Header/Header";
 import HeroSection from "../Components/HeroSection/HeroSection";
 import "./rootpage.scss";
-import Events from "../Components/Events/Events";
 import { config } from "../Configs/config";
 import Footer from "../Components/Footer/Footer";
+import News from "../Components/News/News";
 
 const RootPage: React.FC = () => {
   const [isDesktop, setIsDesktop] = useState(false);
@@ -31,7 +31,7 @@ const RootPage: React.FC = () => {
         <section className={baseClass}>
           <Header />
           <HeroSection />
-          {config.options.locationHasEventSlider && <Events />}
+          {config.options.locationHasNewsSlider && <News />}
           <Categories />
           <Footer />
         </section>

@@ -1,15 +1,15 @@
 @import "../../../Configs/config.scss";
 
-.Event {
+.NewsEntry {
   all: unset;
   display: grid;
   grid-template-columns: auto 1fr;
   background-color: $field-color;
-  height: 100px;
+  height: auto;
   width: 90%;
   min-width: 100%;
   margin-right: 20px;
-  border-radius: 20px;
+  border-radius: $border-radius;
   overflow: hidden;
   user-select: none;
   position: relative;
@@ -39,6 +39,6 @@
   }
 }
 
-.Event:last-of-type {
+.NewsEntry:last-of-type {
   margin-right: 0px;
 }

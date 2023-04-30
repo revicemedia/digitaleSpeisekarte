@@ -1,11 +1,13 @@
+@import "../../../Configs/config.scss";
+
 .Category {
   all: unset;
   padding: 10px 25px;
-  border-radius: 20px;
-  background-color: #dedede;
+  border-radius: $border-radius;
+  background-color: $field-color;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 5px;
+  gap: 0.4rem;
   align-items: center;
   width: auto;
   margin-right: 10px;
@@ -26,8 +28,8 @@
 .Category-Active {
   all: unset;
   padding: 10px 25px;
-  border-radius: 20px;
-  background-color: #2b3446;
+  border-radius: $border-radius;
+  background-color: $main-color;
   display: grid;
   color: #fff;
   grid-template-columns: auto 1fr;

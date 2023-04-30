@@ -1,3 +1,5 @@
+@import "../Configs/config.scss";
+
 .ImpressumPage {
   padding: 20px 0 0 0;
 
@@ -14,6 +16,11 @@
     &__Paragraph {
       font-size: 0.9rem;
       margin-bottom: 0.5rem;
+    }
+
+    &__AdminLink {
+      all: unset;
+      color: $highlight-color;
     }
   }
 }

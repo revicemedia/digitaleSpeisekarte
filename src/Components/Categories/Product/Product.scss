@@ -2,7 +2,7 @@
 
 .Product {
   padding: 1.8rem;
-  border-radius: 20px;
+  border-radius: $border-radius;
   background-color: $field-color;
   display: grid;
   grid-template-columns: 1fr;
