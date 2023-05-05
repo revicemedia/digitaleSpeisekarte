@@ -1,13 +1,13 @@
 @import "../Configs/config.scss";
 
 .RootPage {
-  padding: 20px 0px 0px 0px;
+  padding: 30px 0px 0px 0px;
   background-color: $background-color;
 }
 
 @media (prefers-color-scheme: dark) {
   .RootPage {
-    padding: 20px 0px 0px 0px;
+    padding: 30px 0px 0px 0px;
     background-color: $background-color;
   }
 }
