@@ -18,6 +18,13 @@
       margin-bottom: 0.5rem;
     }
 
+    &__Link {
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+      text-decoration: none;
+      color: $highlight-color;
+    }
+
     &__AdminLink {
       all: unset;
       color: $highlight-color;

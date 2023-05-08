@@ -1,7 +1,9 @@
 @import "../../Configs/config.scss";
 
 .HeroSection {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 10px 20px 30px 20px;
   background-color: #dedede;
   height: auto;

@@ -3,6 +3,8 @@ export interface IConfig {
   locationStreet: string;
   locationCity: string;
   locationPLZ: number;
+  locationPhone?: string;
+  locationInstagram?: string;
   categoriesHeadline: string;
   searchHeadline: string;
   searchPlaceholder: string;
