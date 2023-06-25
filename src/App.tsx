@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import RootPage from "./Pages/rootpage";
-import AllergenePage from "./Pages/allergene";
 import ImpressumPage from "./Pages/impressum";
 
 const App: React.FC = () => {
