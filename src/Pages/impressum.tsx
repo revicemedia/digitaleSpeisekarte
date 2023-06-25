@@ -35,15 +35,15 @@ const ImpressumPage: React.FC = () => {
           </a>
         )}
       </div>
-      <div className={baseClass + "__Wrapper"}>
+      {/* <div className={baseClass + "__Wrapper"}>
         <h3 className={baseClass + "__Wrapper__Headline"}>Dienstleister</h3>
         <p className={baseClass + "__Wrapper__Paragraph"}>Revice Media</p>
         <p className={baseClass + "__Wrapper__Paragraph"}>
           Vertreter: Fabian Hanso
         </p>
-        <p className={baseClass + "__Wrapper__Paragraph"}>Im Born 7a</p>
+        <p className={baseClass + "__Wrapper__Paragraph"}>Rheinstr.</p>
         <p className={baseClass + "__Wrapper__Paragraph"}>53572 Bruchhausen</p>
-      </div>
+      </div> */}
       <div className={baseClass + "__Wrapper"}>
         <h3 className={baseClass + "__Wrapper__Headline"}>Haftung</h3>
         <p className={baseClass + "__Wrapper__Paragraph"}>

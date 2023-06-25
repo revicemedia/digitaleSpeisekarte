@@ -12,6 +12,7 @@ const RootPage: React.FC = () => {
   const baseClass = "RootPage";
 
   // const { loading, error }: any = useContentful();
+  const isPaid = false;
 
   const log = window.innerWidth;
 
@@ -23,9 +24,9 @@ const RootPage: React.FC = () => {
 
   return (
     <>
-      {isDesktop ? (
+      {isDesktop && !isPaid ? (
         <section>
-          Bitte wähle ein mobiles Endgerät oder nutze deinen Portrait-Modus!
+          Bitte kümmern Sie sich um die Zahlung des offenen Betrages.
         </section>
       ) : (
         <section className={baseClass}>
