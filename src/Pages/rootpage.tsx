@@ -26,7 +26,8 @@ const RootPage: React.FC = () => {
     <>
       {!isPaid ? (
         <section>
-          Bitte kümmern Sie sich um die Zahlung des offenen Betrages.
+          Bitte melden Sie sich schnellstmöglich bei uns, wenn Sie diese
+          Mitteilung lesen.
         </section>
       ) : (
         <section className={baseClass}>

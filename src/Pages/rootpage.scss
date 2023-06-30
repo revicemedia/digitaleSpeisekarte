@@ -3,6 +3,7 @@
 .RootPage {
   padding: 30px 0px 0px 0px;
   background-color: $background-color;
+  max-width: 700px;
 }
 
 @media (prefers-color-scheme: dark) {
