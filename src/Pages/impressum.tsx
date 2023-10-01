@@ -24,12 +24,9 @@ const ImpressumPage: React.FC = () => {
       </div>
       <div className={baseClass + "__Wrapper"}>
         <h3 className={baseClass + "__Wrapper__Headline"}>Dienstleister</h3>
-        <p className={baseClass + "__Wrapper__Paragraph"}>Revice Media</p>
-        <p className={baseClass + "__Wrapper__Paragraph"}>
-          Vertreter: Fabian Hanso
-        </p>
-        <p className={baseClass + "__Wrapper__Paragraph"}>Im Born 7a</p>
-        <p className={baseClass + "__Wrapper__Paragraph"}>53572 Bruchhausen</p>
+        <p className={baseClass + "__Wrapper__Paragraph"}>DaLu Services GbR</p>
+        <p className={baseClass + "__Wrapper__Paragraph"}>Am Ringofen 8</p>
+        <p className={baseClass + "__Wrapper__Paragraph"}>56566 Neuwied</p>
       </div>
       <div className={baseClass + "__Wrapper"}>
         <h3 className={baseClass + "__Wrapper__Headline"}>Haftung</h3>
@@ -43,7 +40,7 @@ const ImpressumPage: React.FC = () => {
 
         <p className={baseClass + "__Wrapper__Paragraph"}>
           Sämtliche Inhalte werden von {config.locationName} gepflegt und
-          lediglich durch Revice Media zur Verfügung gestellt. Revice Media
+          lediglich durch Revice Media zur Verfügung gestellt. DaLu Services GbR
           übernimmt keine Gewähr für die Richtigkeit sämtlicher vom Betreiber
           zur Verfügung gestellten Daten.
         </p>
@@ -51,8 +48,8 @@ const ImpressumPage: React.FC = () => {
       <div className={baseClass + "__Wrapper"}>
         <h3 className={baseClass + "__Wrapper__Headline"}>Datenschutz</h3>
         <p className={baseClass + "__Wrapper__Paragraph"}>
-          Wir versichern, dass weder durch Revice Media, noch durch{" "}
-          {config.locationName} Personenbezogene Daten erhoben, gespeichert oder
+          Wir versichern, dass weder durch DaLu Services GbR, noch durch{" "}
+          {config.locationName} personenbezogene Daten erhoben, gespeichert oder
           verarbeitet werden. Es werden keine Cookies verwendet und es besteht
           keine Anbindung zu einer Datenbank, welche Daten erhebt.
         </p>
