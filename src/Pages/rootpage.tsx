@@ -12,7 +12,7 @@ const RootPage: React.FC = () => {
   const baseClass = "RootPage";
 
   // const { loading, error }: any = useContentful();
-  const isPaid = false;
+  const isPaid = true;
 
   // const log = window.innerWidth;
 
