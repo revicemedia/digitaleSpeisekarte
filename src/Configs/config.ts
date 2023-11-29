@@ -2,7 +2,7 @@ import { IConfig } from "../interfaces/ConfigInterface";
 
 export const config: IConfig = {
   locationName: "BARbarossa",
-  locationStreet: "Alte Königsberger Straße 2",
+  locationStreet: "Frankfurter Straße 49",
   locationCity: "Gelnhausen",
   locationPLZ: 63571,
   locationPhone: "01776954779",
