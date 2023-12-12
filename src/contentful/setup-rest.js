@@ -18,14 +18,22 @@ export function useContentful() {
 
   useEffect(() => {
     client
-      .getEntries({ content_type: "kategorien", order: "fields.sortierung" })
+      .getEntries({
+        content_type: "kategorien",
+        order: "fields.sortierung",
+        limit: 1000,
+      })
       .then((res) => {
         setKategorien(res.items);
       })
       .catch((e) => setError(...error, e.message));
 
     client
-      .getEntries({ content_type: "produkte", order: "fields.name" })
+      .getEntries({
+        content_type: "produkte",
+        order: "fields.name",
+        limit: 1000,
+      })
       .then((res) => {
         setProdukte(res.items);
       })
