@@ -5,7 +5,7 @@ export const config: IConfig = {
   locationStreet: "Frankfurter Straße 49",
   locationCity: "Gelnhausen",
   locationPLZ: 63571,
-  locationPhone: "01776954779",
+  locationPhone: "06051 / 9679333",
   locationInstagram: "https://www.instagram.com/barbarossa_hookahlounge",
   categoriesHeadline: "Kategorien",
   searchHeadline: "Suchen",

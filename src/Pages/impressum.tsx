@@ -35,6 +35,21 @@ const ImpressumPage: React.FC = () => {
           </a>
         )}
       </div>
+      <div className={baseClass + "__Wrapper"}>
+        <h3 className={baseClass + "__Wrapper__Headline"}>Öffnungszeiten</h3>
+        <p className={baseClass + "__Wrapper__Paragraph"}>
+          <span className={baseClass + "__Wrapper__Span"}>Mo. - Do.:</span>{" "}
+          15:00 Uhr bis 01:00 Uhr
+        </p>
+        <p className={baseClass + "__Wrapper__Paragraph"}>
+          <span className={baseClass + "__Wrapper__Span"}>Fr. - Sa.:</span>{" "}
+          15:00 Uhr bis 03:00 Uhr
+        </p>
+        <p className={baseClass + "__Wrapper__Paragraph"}>
+          <span className={baseClass + "__Wrapper__Span"}>So.:</span> 15:00 Uhr
+          bis 01:00 Uhr
+        </p>
+      </div>
       {/* <div className={baseClass + "__Wrapper"}>
         <h3 className={baseClass + "__Wrapper__Headline"}>Dienstleister</h3>
         <p className={baseClass + "__Wrapper__Paragraph"}>Revice Media</p>
