@@ -1,7 +1,7 @@
 import { IConfig } from "../interfaces/ConfigInterface";
 
 export const config: IConfig = {
-  locationName: "Cafe Musterstadt",
+  locationName: "Du & Ich",
   locationStreet: "Musterstraße 23",
   locationCity: "Musterstadt",
   locationPLZ: 56555,
@@ -11,7 +11,7 @@ export const config: IConfig = {
   newsHeadline: "News",
   adminLink: "https://app.contentful.com",
   options: {
-    locationHasNewsSlider: true,
+    locationHasNewsSlider: false,
     locationHasEventSlider: false,
     locationHasJobSection: false,
   },

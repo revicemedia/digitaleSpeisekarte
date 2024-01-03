@@ -7,7 +7,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer className={baseClass}>
-      <p className={baseClass + "__Paragraph"}>© 2023 {config.locationName}</p>
+      <p className={baseClass + "__Paragraph"}>© 2024 {config.locationName}</p>
     </footer>
   );
 };
