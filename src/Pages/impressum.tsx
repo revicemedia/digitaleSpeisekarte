@@ -24,9 +24,11 @@ const ImpressumPage: React.FC = () => {
       </div>
       <div className={baseClass + "__Wrapper"}>
         <h3 className={baseClass + "__Wrapper__Headline"}>Dienstleister</h3>
-        <p className={baseClass + "__Wrapper__Paragraph"}>DaLu Services GbR</p>
-        <p className={baseClass + "__Wrapper__Paragraph"}>Am Ringofen 8</p>
-        <p className={baseClass + "__Wrapper__Paragraph"}>56566 Neuwied</p>
+        <p className={baseClass + "__Wrapper__Paragraph"}>Revice Media</p>
+        <p className={baseClass + "__Wrapper__Paragraph"}>Gartenstraße 7</p>
+        <p className={baseClass + "__Wrapper__Paragraph"}>
+          56412 Ruppach-Goldhausen
+        </p>
       </div>
       <div className={baseClass + "__Wrapper"}>
         <h3 className={baseClass + "__Wrapper__Headline"}>Haftung</h3>
