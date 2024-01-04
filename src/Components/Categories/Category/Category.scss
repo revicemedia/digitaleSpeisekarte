@@ -29,9 +29,8 @@
   all: unset;
   padding: 10px 25px;
   border-radius: $border-radius;
-  background-color: $main-color;
+  background-color: #a18955;
   display: grid;
-  color: #fff;
   grid-template-columns: auto 1fr;
   gap: 0.4rem;
   align-items: center;
@@ -42,8 +41,6 @@
   &__Image {
     width: 25px;
     user-select: none;
-    filter: invert(100%);
-    -webkit-filter: invert(100%);
   }
 
   &__Text {
