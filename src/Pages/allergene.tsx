@@ -8,13 +8,13 @@ const AllergenePage: React.FC = () => {
 
   const { allergene }: any = useContentful();
 
-  console.log(allergene);
-
   return (
     <div className={baseClass}>
       <BackHeader />
       <div className={baseClass + "__Wrapper"}>
-        <h3 className={baseClass + "__Wrapper__Headline"}>Allergene</h3>
+        <h3 className={baseClass + "__Wrapper__Headline"}>
+          Allergene & Zusatzstoffe
+        </h3>
         <div className={baseClass + "__Item-Wrapper"}>
           {allergene.map((item: any, index: any) => (
             <div className={baseClass + "__Item-Wrapper__Item"} key={index}>
