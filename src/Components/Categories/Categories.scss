@@ -10,6 +10,7 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
   margin-bottom: 20px;
+  scroll-snap-type: x proximity !important;
 
   &__Headline {
     margin-bottom: 20px;
