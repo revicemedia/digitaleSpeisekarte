@@ -1,7 +1,7 @@
 import { IConfig } from "../interfaces/ConfigInterface";
 
 export const config: IConfig = {
-  locationName: "Cafe Musterstadt",
+  locationName: "Du & Ich Limburg",
   locationStreet: "Musterstraße 23",
   locationCity: "Musterstadt",
   locationPLZ: 56555,
