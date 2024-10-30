@@ -39,14 +39,14 @@ const ImpressumPage: React.FC = () => {
         <h3 className={baseClass + "__Wrapper__Headline"}>Öffnungszeiten</h3>
         <p className={baseClass + "__Wrapper__Paragraph"}>
           <span className={baseClass + "__Wrapper__Span"}>Mo. - Do.:</span>{" "}
-          15:00 Uhr bis 01:00 Uhr
+          17:00 Uhr bis 01:00 Uhr
         </p>
         <p className={baseClass + "__Wrapper__Paragraph"}>
           <span className={baseClass + "__Wrapper__Span"}>Fr. - Sa.:</span>{" "}
-          15:00 Uhr bis 03:00 Uhr
+          17:00 Uhr bis 03:00 Uhr
         </p>
         <p className={baseClass + "__Wrapper__Paragraph"}>
-          <span className={baseClass + "__Wrapper__Span"}>So.:</span> 15:00 Uhr
+          <span className={baseClass + "__Wrapper__Span"}>So.:</span> 17:00 Uhr
           bis 01:00 Uhr
         </p>
       </div>
