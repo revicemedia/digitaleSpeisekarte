@@ -16,22 +16,3 @@ body {
 :root {
   color-scheme: only light;
 }
-
-.maintenance-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  padding: 0px 10px;
-}
-
-.maintenance-headline {
-  margin-bottom: 1rem;
-  text-align: center;
-  font-size: 2rem;
-}
-
-.maintenance-text {
-  text-align: center;
-}
