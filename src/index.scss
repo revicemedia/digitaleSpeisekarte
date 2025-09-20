@@ -16,3 +16,24 @@ body {
 :root {
   color-scheme: only light;
 }
+
+.blocked {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 10px;
+}
+
+.blockimage {
+  height: 6rem;
+  width: 6rem;
+}
+
+.blockedtext {
+  font-size: 0.7rem;
+}
