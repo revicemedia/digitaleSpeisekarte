@@ -5,7 +5,7 @@ import ImpressumPage from "./Pages/impressum";
 import AllergenePage from "./Pages/allergene";
 import MaintenancePage from "./Pages/maintenance";
 
-const MAINTENANCE_MODE = true;
+const MAINTENANCE_MODE = false;
 
 const App: React.FC = () => {
   if (MAINTENANCE_MODE) {
